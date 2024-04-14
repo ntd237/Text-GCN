@@ -1,0 +1,22 @@
+comet_api_key              : YOUR_COMET_API_KEY
+dataset                    : twitter_asian_prejudice_small
+device                     : cpu
+hostname                   : DESKTOP-88H5KLK
+init_type                  : one_hot_init
+lr                         : 0.02
+model                      : TextGNN:pred_type=softmax,node_embd_type=gcn,num_layers=2,layer_dim_list=200_4,act=relu,dropout=True,class_weights=True
+num_epochs                 : 400
+random_seed                : 3
+tvt_list                   : ['train', 'test', 'val']
+tvt_ratio                  : [0.8, 0.1, 0.1]
+use_best_val_model_for_inference : True
+use_comet_ml               : True
+use_edge_weights           : False
+user                       : C:\Users\Lenovo
+validation_metric          : accuracy
+validation_window_size     : 10
+word_window_size           : 10
+ts                         : 2024-04-14T09-20-56.244903
+
+python d:\Workspace\Project\NLP\Graph Convolutional Networks (GCNs)\Text-GCN\main.py --comet_api_key=YOUR_COMET_API_KEY  --dataset=twitter_asian_prejudice_small  --device=cpu  --hostname=DESKTOP-88H5KLK  --init_type=one_hot_init  --lr=0.02  --model=TextGNN:pred_type=softmax,node_embd_type=gcn,num_layers=2,layer_dim_list=200_4,act=relu,dropout=True,class_weights=True  --num_epochs=400  --random_seed=3  --tvt_list=['train', 'test', 'val']  --tvt_ratio=[0.8, 0.1, 0.1]  --use_best_val_model_for_inference=True  --use_comet_ml=True  --use_edge_weights=False  --user=C:\Users\Lenovo  --validation_metric=accuracy  --validation_window_size=10  --word_window_size=10
+
